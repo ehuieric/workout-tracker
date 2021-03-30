@@ -11,12 +11,11 @@ const workoutSchema = new Schema({
     exercise: [{
         type: Schema.Types.ObjectId,
         ref: "Exercise",
-    }
-],
-totalDuration: {
-    type: Number,
-    default: 0
-} 
+    }],
+    totalDuration: {
+        type: Number,
+        default: 0
+    } 
 });
 
 const Workout = mongoose.model("Workout", workoutSchema);
